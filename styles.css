@@ -1,0 +1,202 @@
+html {
+    font-size: 16px
+  }
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    padding: 25px;
+}
+
+body {
+  background-image: url("C:/Users/dthom/OneDrive/DevProjects/Codecademy/resourcesCompanyHomepage/images/business park campus.jpg");
+  background-size: cover;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+}
+
+.programs, .meet-team, .about, .mission-info {
+  background-color: rgba(255, 235, 205, 0.5);
+}
+
+/*Logo*/
+
+.information {
+  background-color: gray;
+  padding-top: 0;
+}
+
+.logo {
+    display: flex;
+    margin: 25px;
+    width: 20%;
+    background-color: gray;
+}
+
+/*Navigation*/
+
+.dropdown {
+    float: right;
+    font-size: 1.25rem;
+    top: 0;
+    padding-right: 150px;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: underline;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navigation ul { 
+    margin: 0;
+    padding: 0;
+  }
+
+ .navigation li a {
+    display: block;
+    width: 60px;
+  }
+
+
+/*Company Information*/
+
+.mission-info p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.about p {
+    margin: 0 40px 40px 40px;
+}
+/*Team Biographies*/
+
+.photo {
+display: block;
+justify-content: center;
+background-color: inherit;
+}
+
+.headshots {
+display: flex;
+justify-content: space-around;
+}
+
+.headshots p {
+  padding-top: 15px;
+}
+
+.headshots .bio {
+  padding-bottom: 15px;
+}
+
+
+/*Programs and Seminars*/
+
+.programs, .meet-team {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.programs {
+  border-collapse: collapse;
+}
+
+.link-photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Contact Information*/
+
+.contact {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.contact img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    background-color:  rgba(255, 235, 205, 0.5);
+    margin-top: 20px;
+    padding: 25px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif cursive;
+    font-style: italic;
+    font-weight: 700;
+}
+/*Footer*/
+
+
+.navigation-footer {
+  position:fixed;
+  display: flex;
+  justify-content: right;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.navigation-footer a {
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 768px) {
+  .navigation-footer, h1 {
+    display: none;
+  }
+}
